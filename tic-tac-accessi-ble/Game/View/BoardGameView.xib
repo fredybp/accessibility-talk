@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BoardGameView" customModule="Jogo_da_Velha" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="tkv-5E-n6D" id="eFN-nT-OOZ"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="R5W-cb-PnF"/>
+                <outlet property="gameStatusButton" destination="9Z8-bM-7Pn" id="w6Y-5E-TH7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="tkv-5E-n6D">
+                    <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="tkv-5E-n6D" secondAttribute="height" multiplier="1:1" id="lY3-U3-Zhy"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="PXK-xk-Y3h">
+                        <size key="itemSize" width="20" height="20"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Z8-bM-7Pn">
+                    <rect key="frame" x="270" y="86" width="100" height="30"/>
+                    <accessibility key="accessibilityConfiguration" hint="Selecione para ouvir o estado do tabuleiro." label="Status do jogo."/>
+                    <state key="normal" title="Status do jogo"/>
+                    <connections>
+                        <action selector="announceStatus:" destination="-1" eventType="touchUpInside" id="tUK-a7-ZDj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tkv-5E-n6D" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3I5-ta-Pqk"/>
+                <constraint firstItem="tkv-5E-n6D" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5j0-N8-u6Z"/>
+                <constraint firstItem="tkv-5E-n6D" firstAttribute="top" secondItem="9Z8-bM-7Pn" secondAttribute="bottom" constant="30" id="8Bd-EM-A3l"/>
+                <constraint firstAttribute="trailing" secondItem="9Z8-bM-7Pn" secondAttribute="trailing" constant="5" id="I7Z-HQ-DEQ"/>
+                <constraint firstItem="tkv-5E-n6D" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="j5G-ox-vhW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

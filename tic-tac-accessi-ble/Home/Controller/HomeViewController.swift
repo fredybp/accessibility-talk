@@ -8,11 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class HomeViewController: UIViewController {
+    
+    @IBOutlet var homeView: HomeView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+//        UIView.appearance().semanticContentAttribute = .forceRightToLeft
+        self.navigationController?.isNavigationBarHidden = true
     }
 
 
