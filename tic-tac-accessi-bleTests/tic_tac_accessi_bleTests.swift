@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import tic_tac_accessi_ble
+//@testable import tic-tac-accesible
 
 class tic_tac_accessi_bleTests: XCTestCase {
 

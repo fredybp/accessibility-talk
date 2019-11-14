@@ -13,6 +13,7 @@
 		B61CE65A221BD96C005AB6F2 /* BoardGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61CE659221BD96C005AB6F2 /* BoardGameView.swift */; };
 		B61CE65D221BDDD3005AB6F2 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61CE65C221BDDD3005AB6F2 /* NibView.swift */; };
 		B61CE65F221BDE51005AB6F2 /* UIView+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61CE65E221BDE51005AB6F2 /* UIView+Extentions.swift */; };
+		B639D073237125C30034415C /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639D072237125C30034415C /* SwiftUIView.swift */; };
 		B63BC4B6222627A6000C06AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BC4B5222627A6000C06AA /* ViewController.swift */; };
 		B63BC4B92227A374000C06AA /* BoardGameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BC4B72227A374000C06AA /* BoardGameCollectionViewCell.swift */; };
 		B63BC4BA2227A374000C06AA /* BoardGameCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63BC4B82227A374000C06AA /* BoardGameCollectionViewCell.xib */; };
@@ -22,6 +23,9 @@
 		B66F82CE22188DC600B7FA97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66F82CD22188DC600B7FA97 /* Assets.xcassets */; };
 		B66F82D122188DC600B7FA97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66F82CF22188DC600B7FA97 /* LaunchScreen.storyboard */; };
 		B66F82DC22188DC600B7FA97 /* tic_tac_accessi_bleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F82DB22188DC600B7FA97 /* tic_tac_accessi_bleTests.swift */; };
+		B6A533A92358F53100266166 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A533A82358F53100266166 /* InstructionsViewController.swift */; };
+		B6A533AD2358F8C500266166 /* InstructionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A533AC2358F8C500266166 /* InstructionsView.xib */; };
+		B6A533AF2358F8D100266166 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A533AE2358F8D100266166 /* InstructionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,7 @@
 		B61CE659221BD96C005AB6F2 /* BoardGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGameView.swift; sourceTree = "<group>"; };
 		B61CE65C221BDDD3005AB6F2 /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		B61CE65E221BDE51005AB6F2 /* UIView+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extentions.swift"; sourceTree = "<group>"; };
+		B639D072237125C30034415C /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		B63BC4B5222627A6000C06AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B63BC4B72227A374000C06AA /* BoardGameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGameCollectionViewCell.swift; sourceTree = "<group>"; };
 		B63BC4B82227A374000C06AA /* BoardGameCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoardGameCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -54,6 +59,9 @@
 		B66F82D722188DC600B7FA97 /* tic-tac-accessi-bleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tic-tac-accessi-bleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66F82DB22188DC600B7FA97 /* tic_tac_accessi_bleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tic_tac_accessi_bleTests.swift; sourceTree = "<group>"; };
 		B66F82DD22188DC600B7FA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6A533A82358F53100266166 /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
+		B6A533AC2358F8C500266166 /* InstructionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstructionsView.xib; sourceTree = "<group>"; };
+		B6A533AE2358F8D100266166 /* InstructionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,9 +174,8 @@
 		B66F82C522188DC400B7FA97 /* tic-tac-accessi-ble */ = {
 			isa = PBXGroup;
 			children = (
+				B6A533A52358F04100266166 /* App */,
 				B61CE65B221BDDBE005AB6F2 /* Utils */,
-				B61CE64D221BD6B8005AB6F2 /* Game */,
-				B61CE64C221BD6AE005AB6F2 /* Home */,
 				B66F82C622188DC400B7FA97 /* AppDelegate.swift */,
 				B66F82CA22188DC400B7FA97 /* Main.storyboard */,
 				B66F82CD22188DC600B7FA97 /* Assets.xcassets */,
@@ -185,6 +192,43 @@
 				B66F82DD22188DC600B7FA97 /* Info.plist */,
 			);
 			path = "tic-tac-accessi-bleTests";
+			sourceTree = "<group>";
+		};
+		B6A533A42358F02F00266166 /* Instructions */ = {
+			isa = PBXGroup;
+			children = (
+				B6A533A62358F4E300266166 /* Controller */,
+				B6A533A72358F4F400266166 /* View */,
+			);
+			path = Instructions;
+			sourceTree = "<group>";
+		};
+		B6A533A52358F04100266166 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B61CE64C221BD6AE005AB6F2 /* Home */,
+				B61CE64D221BD6B8005AB6F2 /* Game */,
+				B6A533A42358F02F00266166 /* Instructions */,
+				B639D072237125C30034415C /* SwiftUIView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B6A533A62358F4E300266166 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B6A533A82358F53100266166 /* InstructionsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B6A533A72358F4F400266166 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6A533AE2358F8D100266166 /* InstructionsView.swift */,
+				B6A533AC2358F8C500266166 /* InstructionsView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +284,7 @@
 					};
 					B66F82D622188DC600B7FA97 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1110;
 						TestTargetID = B66F82C222188DC400B7FA97;
 					};
 				};
@@ -271,6 +316,7 @@
 				B66F82D122188DC600B7FA97 /* LaunchScreen.storyboard in Resources */,
 				B63BC4BA2227A374000C06AA /* BoardGameCollectionViewCell.xib in Resources */,
 				B66F82CE22188DC600B7FA97 /* Assets.xcassets in Resources */,
+				B6A533AD2358F8C500266166 /* InstructionsView.xib in Resources */,
 				B66F82CC22188DC400B7FA97 /* Main.storyboard in Resources */,
 				B61CE658221BD90E005AB6F2 /* BoardGameView.xib in Resources */,
 			);
@@ -290,10 +336,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A533AF2358F8D100266166 /* InstructionsView.swift in Sources */,
 				B61CE651221BD6E3005AB6F2 /* GameViewController.swift in Sources */,
+				B639D073237125C30034415C /* SwiftUIView.swift in Sources */,
 				B61CE64B221BBC76005AB6F2 /* HomeView.swift in Sources */,
 				B63BC4B6222627A6000C06AA /* ViewController.swift in Sources */,
 				B61CE65D221BDDD3005AB6F2 /* NibView.swift in Sources */,
+				B6A533A92358F53100266166 /* InstructionsViewController.swift in Sources */,
 				B61CE65A221BD96C005AB6F2 /* BoardGameView.swift in Sources */,
 				B66F82C922188DC400B7FA97 /* HomeViewController.swift in Sources */,
 				B63BC4B92227A374000C06AA /* BoardGameCollectionViewCell.swift in Sources */,
@@ -391,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -446,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -463,14 +512,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UE2NN5U8D4;
 				INFOPLIST_FILE = "tic-tac-accessi-ble/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fred.tic-tac-accessi-ble";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -482,14 +531,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UE2NN5U8D4;
 				INFOPLIST_FILE = "tic-tac-accessi-ble/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fred.tic-tac-accessi-ble";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -509,9 +558,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fred.tic-tac-accessi-bleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tic-tac-accessi-ble.app/tic-tac-accessi-ble";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jogo da Velha.app/Jogo da Velha";
 			};
 			name = Debug;
 		};
@@ -530,9 +579,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fred.tic-tac-accessi-bleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tic-tac-accessi-ble.app/tic-tac-accessi-ble";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jogo da Velha.app/Jogo da Velha";
 			};
 			name = Release;
 		};
